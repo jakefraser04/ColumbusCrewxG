@@ -16,5 +16,23 @@
     "cumulative_goals": 2,
     "rolling_xg_for": 1.09,
     "rolling_xg_ag": 1.29
+  },
+  {
+    "date": "2026-03-01",
+    "opponent": "Sporting Kansas City",
+    "venue": "Away",
+    "goals_for": 2,
+    "goals_ag": 2,
+    "xg_for": 2.35,
+    "xg_ag": 1.58,
+    "xg_diff": 0.77,
+    "result": "D",
+    "xg_result": "xW",
+    "deserved": false,
+    "cumulative_xg": 3.44,
+    "cumulative_xga": 2.87,
+    "cumulative_goals": 4,
+    "rolling_xg_for": 1.7200000000000002,
+    "rolling_xg_ag": 1.435
   }
 ]
