@@ -34,5 +34,23 @@
     "cumulative_goals": 4,
     "rolling_xg_for": 1.7200000000000002,
     "rolling_xg_ag": 1.435
+  },
+  {
+    "date": "2026-03-08",
+    "opponent": "Chicago Fire FC",
+    "venue": "Home",
+    "goals_for": 0,
+    "goals_ag": 0,
+    "xg_for": 1.44,
+    "xg_ag": 0.82,
+    "xg_diff": 0.62,
+    "result": "D",
+    "xg_result": "xW",
+    "deserved": false,
+    "cumulative_xg": 4.88,
+    "cumulative_xga": 3.69,
+    "cumulative_goals": 4,
+    "rolling_xg_for": 1.6266666666666667,
+    "rolling_xg_ag": 1.23
   }
 ]
