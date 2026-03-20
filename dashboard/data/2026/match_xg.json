@@ -52,5 +52,23 @@
     "cumulative_goals": 4,
     "rolling_xg_for": 1.6266666666666667,
     "rolling_xg_ag": 1.23
+  },
+  {
+    "date": "2026-03-14",
+    "opponent": "Nashville SC",
+    "venue": "Home",
+    "goals_for": 0,
+    "goals_ag": 1,
+    "xg_for": 0.24,
+    "xg_ag": 1.41,
+    "xg_diff": -1.17,
+    "result": "L",
+    "xg_result": "xL",
+    "deserved": true,
+    "cumulative_xg": 5.12,
+    "cumulative_xga": 5.1,
+    "cumulative_goals": 4,
+    "rolling_xg_for": 1.28,
+    "rolling_xg_ag": 1.275
   }
 ]

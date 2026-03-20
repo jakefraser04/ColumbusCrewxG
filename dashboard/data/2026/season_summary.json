@@ -1,15 +1,15 @@
 {
   "team": "Columbus Crew",
   "season": "2026",
-  "matches": 3,
+  "matches": 4,
   "wins": 0,
   "draws": 2,
-  "losses": 1,
-  "total_xg_for": 4.88,
-  "total_xg_ag": 3.69,
+  "losses": 2,
+  "total_xg_for": 5.12,
+  "total_xg_ag": 5.1,
   "total_goals": 4,
-  "xg_diff": 1.2,
+  "xg_diff": 0.03,
   "lucky_wins": 0,
   "unlucky_losses": 0,
-  "deserved_pct": 0.0
+  "deserved_pct": 25.0
 }
