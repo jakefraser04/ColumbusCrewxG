@@ -70,5 +70,23 @@
     "cumulative_goals": 4,
     "rolling_xg_for": 1.28,
     "rolling_xg_ag": 1.275
+  },
+  {
+    "date": "2026-03-21",
+    "opponent": "Toronto FC",
+    "venue": "Away",
+    "goals_for": 1,
+    "goals_ag": 2,
+    "xg_for": 0.95,
+    "xg_ag": 1.01,
+    "xg_diff": -0.06,
+    "result": "L",
+    "xg_result": "xD",
+    "deserved": false,
+    "cumulative_xg": 6.07,
+    "cumulative_xga": 6.11,
+    "cumulative_goals": 5,
+    "rolling_xg_for": 1.214,
+    "rolling_xg_ag": 1.222
   }
 ]
