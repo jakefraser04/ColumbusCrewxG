@@ -88,5 +88,23 @@
     "cumulative_goals": 5,
     "rolling_xg_for": 1.214,
     "rolling_xg_ag": 1.222
+  },
+  {
+    "date": "2026-04-04",
+    "opponent": "Atlanta United FC",
+    "venue": "Away",
+    "goals_for": 3,
+    "goals_ag": 1,
+    "xg_for": 1.7,
+    "xg_ag": 1.08,
+    "xg_diff": 0.62,
+    "result": "W",
+    "xg_result": "xW",
+    "deserved": true,
+    "cumulative_xg": 7.77,
+    "cumulative_xga": 7.19,
+    "cumulative_goals": 8,
+    "rolling_xg_for": 1.3359999999999999,
+    "rolling_xg_ag": 1.1800000000000002
   }
 ]
