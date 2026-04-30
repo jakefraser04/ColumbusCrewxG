@@ -1,3 +1,11 @@
 date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,deserved,cumulative_xg,cumulative_xga,cumulative_goals,rolling_xg_for,rolling_xg_ag
 2026-02-22,Portland Timbers FC,Away,2,3,1.09,1.29,-0.19,L,xD,False,1.09,1.29,2,1.09,1.29
 2026-03-01,Sporting Kansas City,Away,2,2,2.35,1.58,0.77,D,xW,False,3.44,2.87,4,1.7200000000000002,1.435
+2026-03-08,Chicago Fire FC,Home,0,0,1.44,0.82,0.62,D,xW,False,4.88,3.69,4,1.6266666666666667,1.23
+2026-03-14,Nashville SC,Home,0,1,0.24,1.41,-1.17,L,xL,True,5.12,5.1,4,1.28,1.275
+2026-03-21,Toronto FC,Away,1,2,0.95,1.01,-0.06,L,xD,False,6.07,6.11,5,1.214,1.222
+2026-04-04,Atlanta United FC,Away,3,1,1.62,1.1,0.52,W,xW,True,7.69,7.21,8,1.3199999999999998,1.184
+2026-04-12,Orlando City SC,Home,1,1,1.68,0.54,1.14,D,xW,False,9.37,7.75,9,1.186,0.976
+2026-04-18,New England Revolution,Away,1,2,1.18,1.35,-0.17,L,xD,False,10.55,9.1,10,1.134,1.082
+2026-04-23,LA Galaxy,Home,2,1,1.11,0.85,0.27,W,xD,False,11.66,9.95,12,1.308,0.97
+2026-04-25,Philadelphia Union,Home,1,0,1.02,1.2,-0.18,W,xD,False,12.68,11.15,13,1.3219999999999998,1.008

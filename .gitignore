@@ -1,1 +1,3 @@
 data/statsbomb/
+data/raw/
+*.pkl

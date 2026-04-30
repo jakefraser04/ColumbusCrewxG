@@ -5,7 +5,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?style=flat-square&logo=github&logoColor=white)](https://jakefraser04.github.io/Crew2025xG/)
 
-**[→ View Live Dashboard](https://jakefraser04.github.io/Crew2025xG/)**
+**[→ View Live Dashboard](https://jakefraser04.github.io/ColumbusCrewxG/)**
 
 ---
 
@@ -21,22 +21,24 @@ Expected Goals (xG) cuts through scorelines and tells you which results a team *
 
 ```
 ColumbusCrewxG/
-├── assets/
-│   ├── 2025/                     # Season-specific charts
-│   ├── 2026/
-│   └── xG_heatmap.png            # Static model probability map
-├── dashboard/
-│   └── data/
-│       ├── 2025/                 # Match & Summary JSON data
-│       └── 2026/
+├── assets/                 # Generated visuals for README and reports
+│   ├── 2025/               # Historical season visualizations
+│   └── 2026/               # Current season visualizations
+├── dashboard/              # Interactive Web Interface
+│   └── data/               # JSON endpoints feeding the dashboard
 ├── data/
-│   └── processed/                # CSV exports for notebook use
-├── notebooks/
-│   ├── xg_model.ipynb            # Train logistic regression xG model
-│   └── crew_xG_analysis.ipynb    # Model application & EDA
-├── index.html                    # Main Dashboard (GitHub Pages entry point)
-├── update_season.py              # Automation script for new match data
-└── requirements.txt
+│   ├── raw/                # (Gitignored) Source match data
+│   └── processed/          # Cleaned datasets for modeling
+├── models/                 # Production-ready model & metadata
+│   ├── model_meta.json     # Performance metrics (AUC, Log-Loss)
+│   └── xg_model.pkl        # Serialized Logistic Regression model
+├── notebooks/              # Research & Development
+│   ├── crew_xG_analysis.ipynb
+│   └── xG_model.ipynb
+├── index.html              # Dashboard Entry Point
+├── update_season.py        # Automated Data Pipeline Script
+├── requirements.txt        # Project Dependencies
+└── README.md
 ```
 
 ---
