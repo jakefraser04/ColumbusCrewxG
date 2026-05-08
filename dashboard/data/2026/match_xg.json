@@ -178,5 +178,23 @@
     "cumulative_goals": 13,
     "rolling_xg_for": 1.3219999999999998,
     "rolling_xg_ag": 1.008
+  },
+  {
+    "date": "2026-05-02",
+    "opponent": "Minnesota United FC",
+    "venue": "Home",
+    "goals_for": 2,
+    "goals_ag": 3,
+    "xg_for": 1.69,
+    "xg_ag": 1.52,
+    "xg_diff": 0.17,
+    "result": "L",
+    "xg_result": "xD",
+    "deserved": false,
+    "cumulative_xg": 14.37,
+    "cumulative_xga": 12.67,
+    "cumulative_goals": 15,
+    "rolling_xg_for": 1.3359999999999999,
+    "rolling_xg_ag": 1.092
   }
 ]
