@@ -196,5 +196,23 @@
     "cumulative_goals": 15,
     "rolling_xg_for": 1.3359999999999999,
     "rolling_xg_ag": 1.092
+  },
+  {
+    "date": "2026-05-10",
+    "opponent": "New York City FC",
+    "venue": "Away",
+    "goals_for": 0,
+    "goals_ag": 3,
+    "xg_for": 1.22,
+    "xg_ag": 1.17,
+    "xg_diff": 0.04,
+    "result": "L",
+    "xg_result": "xD",
+    "deserved": false,
+    "cumulative_xg": 15.59,
+    "cumulative_xga": 13.84,
+    "cumulative_goals": 15,
+    "rolling_xg_for": 1.244,
+    "rolling_xg_ag": 1.218
   }
 ]
