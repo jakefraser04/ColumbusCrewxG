@@ -5,10 +5,10 @@
   "wins": 3,
   "draws": 3,
   "losses": 6,
-  "total_xg_for": 15.59,
-  "total_xg_ag": 13.84,
+  "total_xg_for": 15.58,
+  "total_xg_ag": 14.0,
   "total_goals": 15,
-  "xg_diff": 1.76,
+  "xg_diff": 1.59,
   "lucky_wins": 0,
   "unlucky_losses": 0,
   "deserved_pct": 16.7
