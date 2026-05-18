@@ -214,5 +214,41 @@
     "cumulative_goals": 15,
     "rolling_xg_for": 1.242,
     "rolling_xg_ag": 1.25
+  },
+  {
+    "date": "2026-05-13",
+    "opponent": "New York Red Bulls",
+    "venue": "Away",
+    "goals_for": 2,
+    "goals_ag": 3,
+    "xg_for": 1.6,
+    "xg_ag": 2.82,
+    "xg_diff": -1.21,
+    "result": "L",
+    "xg_result": "xL",
+    "deserved": true,
+    "cumulative_xg": 17.18,
+    "cumulative_xga": 16.82,
+    "cumulative_goals": 17,
+    "rolling_xg_for": 1.3259999999999998,
+    "rolling_xg_ag": 1.544
+  },
+  {
+    "date": "2026-05-16",
+    "opponent": "Philadelphia Union",
+    "venue": "Away",
+    "goals_for": 1,
+    "goals_ag": 1,
+    "xg_for": 0.6,
+    "xg_ag": 0.98,
+    "xg_diff": -0.38,
+    "result": "D",
+    "xg_result": "xL",
+    "deserved": false,
+    "cumulative_xg": 17.78,
+    "cumulative_xga": 17.8,
+    "cumulative_goals": 18,
+    "rolling_xg_for": 1.224,
+    "rolling_xg_ag": 1.5699999999999998
   }
 ]
