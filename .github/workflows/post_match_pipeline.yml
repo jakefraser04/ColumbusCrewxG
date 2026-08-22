@@ -1,0 +1,30 @@
+name: Columbus Crew Post-Match xG Run
+
+on:
+  schedule:
+    # Runs at 04:00 UTC (midnight EDT) on Sunday, Monday, and Thursday mornings
+    - cron: '0 4 * * 0,1,4'
+  workflow_dispatch: # Allows manual triggering from the GitHub Actions UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed if committing generated plots/data back to repo
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Execute post-match processing
+        run: |
+          python main.py

@@ -9,3 +9,7 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-04-18,New England Revolution,Away,1,2,1.18,1.35,-0.17,L,xD,False,10.55,9.1,10,1.134,1.082
 2026-04-23,LA Galaxy,Home,2,1,1.11,0.85,0.27,W,xD,False,11.66,9.95,12,1.308,0.97
 2026-04-25,Philadelphia Union,Home,1,0,1.02,1.2,-0.18,W,xD,False,12.68,11.15,13,1.3219999999999998,1.008
+2026-05-02,Minnesota United FC,Home,2,3,1.69,1.52,0.17,L,xD,False,14.37,12.67,15,1.3359999999999999,1.092
+2026-05-10,New York City FC,Away,0,3,1.21,1.33,-0.13,L,xD,False,15.58,14.0,15,1.242,1.25
+2026-05-13,New York Red Bulls,Away,2,3,1.6,2.82,-1.21,L,xL,True,17.18,16.82,17,1.3259999999999998,1.544
+2026-05-16,Philadelphia Union,Away,1,1,0.6,0.98,-0.38,D,xL,False,17.78,17.8,18,1.224,1.5699999999999998
