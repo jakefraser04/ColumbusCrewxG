@@ -223,6 +223,9 @@
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .chart-card::before {
@@ -233,7 +236,13 @@
     background: linear-gradient(90deg, var(--gold), transparent);
   }
 
-  .img-chart { width: 100%; border-radius: 6px; display: block; }
+  .img-chart {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+  }
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 
