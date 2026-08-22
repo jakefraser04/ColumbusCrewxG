@@ -115,98 +115,67 @@ def load_model():
 
 
 # ══════════════════════════════════════════════════════════
-# STEP 2: Fetch Columbus Crew match data from ASA
+# STEP 2: Fetch Columbus Crew match data & shots from ASA
 # ══════════════════════════════════════════════════════════
 def fetch_crew_data():
     log(f'Fetching {CREW_NAME} {SEASON} data from American Soccer Analysis...')
-
-    # Create an instance of the ASA API client
     api = AmericanSoccerAnalysis()
 
     # Call the API to get match xG data
-    # This returns a pandas DataFrame — like a spreadsheet in Python
     raw = api.get_game_xgoals(
         leagues='mls',
         season_name=SEASON,
         team_ids=CREW_ID
     )
 
-    # Get the full list of MLS teams so we can look up opponent names by ID
     teams = api.get_teams(leagues='mls')
-
-    # .set_index() makes team_id the row label (index) of the DataFrame
-    # ['team_name'] selects just that column
-    # .to_dict() converts it to a Python dictionary: {team_id: team_name}
     team_lookup = teams.set_index('team_id')['team_name'].to_dict()
 
-    # We'll build a list of dictionaries, one per match
     matches = []
-
-    # iterrows() loops through every row in the DataFrame
-    # The underscore _ is a convention meaning "I don't need the row index"
     for _, row in raw.iterrows():
-
-        # Check if the Crew were the home team in this match
         is_home = row['home_team_id'] == CREW_ID
 
-        # Conditional assignment using Python's ternary operator:
-        # value_if_true if condition else value_if_false
         xg_for    = float(row['home_team_xgoals'] if is_home else row['away_team_xgoals'])
         xg_ag     = float(row['away_team_xgoals'] if is_home else row['home_team_xgoals'])
         goals_for = int(row['home_goals'] if is_home else row['away_goals'])
         goals_ag  = int(row['away_goals'] if is_home else row['home_goals'])
         opp_id    = row['away_team_id'] if is_home else row['home_team_id']
 
-        # Determine match result
         if goals_for > goals_ag:    result = 'W'
         elif goals_for == goals_ag: result = 'D'
         else:                       result = 'L'
 
-        # Determine what xG says the result SHOULD have been
-        # A margin of 0.3 xG is our threshold for calling it decisive
         if xg_for > xg_ag + 0.3:   xg_result = 'xW'
         elif xg_ag > xg_for + 0.3: xg_result = 'xL'
         else:                       xg_result = 'xD'
 
-        # Did the actual result match what xG predicted?
-        # 'or' means any one of these conditions being True makes deserved = True
         deserved = (
             (result == 'W' and xg_result == 'xW') or
             (result == 'D' and xg_result == 'xD') or
             (result == 'L' and xg_result == 'xL')
         )
 
-        # .get(key, default) looks up a key in a dictionary
-        # If the key doesn't exist, it returns the default value (opp_id here)
         matches.append({
-            'date':      str(row['date_time_utc'])[:10],  # [:10] slices just YYYY-MM-DD
-            'opponent':  team_lookup.get(opp_id, opp_id),
-            'venue':     'Home' if is_home else 'Away',
-            'goals_for': goals_for,
-            'goals_ag':  goals_ag,
-            'xg_for':    round(xg_for, 2),   # round() limits decimal places
-            'xg_ag':     round(xg_ag, 2),
-            'xg_diff':   round(xg_for - xg_ag, 2),
-            'result':    result,
-            'xg_result': xg_result,
-            'deserved':  deserved,
+            'date':       str(row['date_time_utc'])[:10],
+            'opponent':   team_lookup.get(opp_id, opp_id),
+            'venue':      'Home' if is_home else 'Away',
+            'goals_for':  goals_for,
+            'goals_ag':   goals_ag,
+            'xg_for':     round(xg_for, 2),
+            'xg_ag':      round(xg_ag, 2),
+            'xg_diff':    round(xg_for - xg_ag, 2),
+            'result':     result,
+            'xg_result':  xg_result,
+            'deserved':   deserved,
         })
 
-    # pd.DataFrame() converts our list of dictionaries into a DataFrame
     crew = pd.DataFrame(matches)
-
-    # .sort_values() sorts rows by a column — ascending by date (oldest first)
-    # .reset_index(drop=True) resets row numbers to 0, 1, 2... after sorting
     crew = crew.sort_values('date').reset_index(drop=True)
 
-    # .cumsum() computes a running total — each row adds to the previous
-    # .round(2) limits to 2 decimal places
     crew['cumulative_xg']    = crew['xg_for'].cumsum().round(2)
     crew['cumulative_xga']   = crew['xg_ag'].cumsum().round(2)
     crew['cumulative_goals'] = crew['goals_for'].cumsum()
 
-    # .rolling(5).mean() computes a 5-match sliding average
-    # min_periods=1 means it starts averaging even with fewer than 5 matches
     crew['rolling_xg_for'] = crew['xg_for'].rolling(5, min_periods=1).mean()
     crew['rolling_xg_ag']  = crew['xg_ag'].rolling(5, min_periods=1).mean()
 
@@ -350,7 +319,7 @@ def build_charts(crew):
 
     # plt.subplots(1, 2) creates 1 row, 2 columns of charts side by side
     # axes is a list of two ax objects
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+    fig, axes = plt.subplots(1, 2, figsize=(9, 7))
     fig.patch.set_facecolor(CREW_BLACK)
 
     # zip() pairs two lists together so we can loop through both at once
@@ -388,6 +357,61 @@ def build_charts(crew):
                 bbox_inches='tight', facecolor=CREW_BLACK)
     plt.close()
     log('  Saved home_away_xg.png')
+    
+    # ── Chart 5: Pitch Shot Map & xG ──────────────────────
+    from mplsoccer import Pitch
+
+    shots_path = f'data/processed/{SEASON}/crew_shots.csv'
+    if os.path.exists(shots_path):
+        df_shots = pd.read_csv(shots_path)
+
+        if not df_shots.empty and 'x' in df_shots.columns and 'y' in df_shots.columns:
+            # ASA pitch dimensions are typically standardized 0-100 or yard scales
+            # Standard StatsBomb scale is 120 x 80. If ASA coordinates are 0-100, scale them:
+            # df_shots['x_scaled'] = df_shots['x'] * 1.2
+            # df_shots['y_scaled'] = df_shots['y'] * 0.8
+            
+            pitch = Pitch(
+                pitch_type='custom', 
+                pitch_length=100, 
+                pitch_width=100,
+                pitch_color=CREW_BLACK, 
+                line_color='#444444', 
+                half=True
+            )
+            fig, ax = pitch.draw(figsize=(9, 7))
+            fig.patch.set_facecolor(CREW_BLACK)
+
+            # Check outcome/goal identifier from ASA ('Goal' or is_goal == 1)
+            is_goal = df_shots['result'].str.lower() == 'goal' if 'result' in df_shots.columns else df_shots['is_goal'] == 1
+            goals = df_shots[is_goal]
+            non_goals = df_shots[~is_goal]
+
+            # Scatter Non-Goals (Yellow circles)
+            pitch.scatter(
+                non_goals['x'], non_goals['y'],
+                s=non_goals['xg'] * 500 + 40,
+                c=CREW_GOLD, alpha=0.65, edgecolors='white', linewidth=0.5,
+                marker='o', label='Shot (No Goal)', ax=ax
+            )
+
+            # Scatter Goals (Green stars)
+            pitch.scatter(
+                goals['x'], goals['y'],
+                s=goals['xg'] * 500 + 90,
+                c='#2ecc71', alpha=0.95, edgecolors='white', linewidth=1.2,
+                marker='*', label='Goal', ax=ax
+            )
+
+            ax.legend(loc='lower left', facecolor=CREW_GREY, edgecolor='none', labelcolor='white', fontsize=8)
+            ax.set_title(f'Columbus Crew {SEASON} — Shot Map & xG Quality',
+                         color='white', fontsize=12, fontweight='bold', pad=10)
+
+            plt.tight_layout()
+            plt.savefig(f'{ASSETS_DIR}/xG_heatmap.png', dpi=180,
+                        bbox_inches='tight', facecolor=CREW_BLACK)
+            plt.close()
+            log('  Saved updated xG_heatmap.png with match shots')
 
 
 # ══════════════════════════════════════════════════════════
