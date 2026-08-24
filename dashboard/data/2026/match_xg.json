@@ -365,16 +365,16 @@
     "venue": "Away",
     "goals_for": 2,
     "goals_ag": 3,
-    "xg_for": 0.28,
-    "xg_ag": 1.0,
-    "xg_diff": -0.72,
+    "xg_for": 0.26,
+    "xg_ag": 0.79,
+    "xg_diff": -0.53,
     "result": "L",
     "xg_result": "xL",
     "deserved": true,
-    "cumulative_xg": 27.2,
-    "cumulative_xga": 27.39,
+    "cumulative_xg": 27.18,
+    "cumulative_xga": 27.18,
     "cumulative_goals": 27,
-    "rolling_xg_for": 1.234,
-    "rolling_xg_ag": 1.332
+    "rolling_xg_for": 1.23,
+    "rolling_xg_ag": 1.29
   }
 ]
