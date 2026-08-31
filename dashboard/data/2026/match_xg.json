@@ -376,5 +376,23 @@
     "cumulative_goals": 27,
     "rolling_xg_for": 1.23,
     "rolling_xg_ag": 1.29
+  },
+  {
+    "date": "2026-08-30",
+    "opponent": "New England Revolution",
+    "venue": "Home",
+    "goals_for": 1,
+    "goals_ag": 3,
+    "xg_for": 0.69,
+    "xg_ag": 1.44,
+    "xg_diff": -0.76,
+    "result": "L",
+    "xg_result": "xL",
+    "deserved": true,
+    "cumulative_xg": 27.87,
+    "cumulative_xga": 28.62,
+    "cumulative_goals": 28,
+    "rolling_xg_for": 0.944,
+    "rolling_xg_ag": 1.3940000000000001
   }
 ]

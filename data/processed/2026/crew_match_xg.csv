@@ -20,3 +20,4 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-08-15,Charlotte FC,Away,1,3,2.34,1.85,0.49,L,xW,False,26.5,25.02,25,1.7439999999999998,1.444
 2026-08-19,CF Montréal,Home,0,2,0.42,1.37,-0.96,L,xL,True,26.92,26.39,25,1.524,1.44
 2026-08-23,Nashville SC,Away,2,3,0.26,0.79,-0.53,L,xL,True,27.18,27.18,27,1.23,1.29
+2026-08-30,New England Revolution,Home,1,3,0.69,1.44,-0.76,L,xL,True,27.87,28.62,28,0.944,1.3940000000000001
