@@ -21,4 +21,5 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-08-19,CF Montréal,Home,0,2,0.42,1.37,-0.96,L,xL,True,26.92,26.39,25,1.524,1.44
 2026-08-23,Nashville SC,Away,2,3,0.26,0.79,-0.53,L,xL,True,27.18,27.18,27,1.23,1.29
 2026-08-30,New England Revolution,Home,1,3,0.6,1.42,-0.82,L,xL,True,27.78,28.6,28,0.9259999999999999,1.3900000000000001
-2026-09-05,Colorado Rapids,Home,3,0,1.86,0.52,1.33,W,xW,True,29.64,29.12,31,1.096,1.19
+2026-09-05,Colorado Rapids,Home,3,0,1.82,0.68,1.14,W,xW,True,29.6,29.28,31,1.0879999999999999,1.222
+2026-09-09,D.C. United,Away,1,2,0.92,2.22,-1.31,L,xL,True,30.52,31.5,32,0.804,1.296
