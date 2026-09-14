@@ -437,16 +437,16 @@
     "venue": "Home",
     "goals_for": 0,
     "goals_ag": 1,
-    "xg_for": 1.53,
-    "xg_ag": 1.72,
-    "xg_diff": -0.19,
+    "xg_for": 2.01,
+    "xg_ag": 1.63,
+    "xg_diff": 0.38,
     "result": "L",
-    "xg_result": "xD",
+    "xg_result": "xW",
     "deserved": false,
-    "cumulative_xg": 32.11,
-    "cumulative_xga": 33.15,
+    "cumulative_xg": 32.59,
+    "cumulative_xga": 33.06,
     "cumulative_goals": 32,
-    "rolling_xg_for": 1.038,
-    "rolling_xg_ag": 1.3519999999999999
+    "rolling_xg_for": 1.134,
+    "rolling_xg_ag": 1.334
   }
 ]

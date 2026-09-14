@@ -23,4 +23,4 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-08-30,New England Revolution,Home,1,3,0.6,1.42,-0.82,L,xL,True,27.78,28.6,28,0.9259999999999999,1.3900000000000001
 2026-09-05,Colorado Rapids,Home,3,0,1.82,0.68,1.14,W,xW,True,29.6,29.28,31,1.0879999999999999,1.222
 2026-09-09,D.C. United,Away,1,2,0.98,2.15,-1.17,L,xL,True,30.58,31.43,32,0.8160000000000001,1.282
-2026-09-12,New York Red Bulls,Home,0,1,1.53,1.72,-0.19,L,xD,False,32.11,33.15,32,1.038,1.3519999999999999
+2026-09-12,New York Red Bulls,Home,0,1,2.01,1.63,0.38,L,xW,False,32.59,33.06,32,1.134,1.334
