@@ -448,5 +448,23 @@
     "cumulative_goals": 32,
     "rolling_xg_for": 1.134,
     "rolling_xg_ag": 1.334
+  },
+  {
+    "date": "2026-09-19",
+    "opponent": "CF Montr\u00e9al",
+    "venue": "Away",
+    "goals_for": 2,
+    "goals_ag": 0,
+    "xg_for": 0.81,
+    "xg_ag": 0.59,
+    "xg_diff": 0.22,
+    "result": "W",
+    "xg_result": "xD",
+    "deserved": false,
+    "cumulative_xg": 33.4,
+    "cumulative_xga": 33.65,
+    "cumulative_goals": 34,
+    "rolling_xg_for": 1.2440000000000002,
+    "rolling_xg_ag": 1.294
   }
 ]
