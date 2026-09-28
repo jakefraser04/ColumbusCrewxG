@@ -466,5 +466,23 @@
     "cumulative_goals": 34,
     "rolling_xg_for": 1.2440000000000002,
     "rolling_xg_ag": 1.294
+  },
+  {
+    "date": "2026-09-27",
+    "opponent": "Inter Miami CF",
+    "venue": "Home",
+    "goals_for": 2,
+    "goals_ag": 1,
+    "xg_for": 1.68,
+    "xg_ag": 0.43,
+    "xg_diff": 1.25,
+    "result": "W",
+    "xg_result": "xW",
+    "deserved": true,
+    "cumulative_xg": 35.08,
+    "cumulative_xga": 34.08,
+    "cumulative_goals": 36,
+    "rolling_xg_for": 1.46,
+    "rolling_xg_ag": 1.0959999999999999
   }
 ]
