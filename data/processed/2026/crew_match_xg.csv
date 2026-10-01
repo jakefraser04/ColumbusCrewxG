@@ -25,4 +25,4 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-09-09,D.C. United,Away,1,2,0.98,2.15,-1.17,L,xL,True,30.58,31.43,32,0.8160000000000001,1.282
 2026-09-12,New York Red Bulls,Home,0,1,2.01,1.63,0.38,L,xW,False,32.59,33.06,32,1.134,1.334
 2026-09-19,CF Montréal,Away,2,0,0.81,0.59,0.22,W,xD,False,33.4,33.65,34,1.2440000000000002,1.294
-2026-09-27,Inter Miami CF,Home,2,1,1.68,0.43,1.25,W,xW,True,35.08,34.08,36,1.46,1.0959999999999999
+2026-09-27,Inter Miami CF,Home,2,1,1.8,0.4,1.4,W,xW,True,35.2,34.05,36,1.484,1.09
