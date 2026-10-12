@@ -26,4 +26,4 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-09-12,New York Red Bulls,Home,0,1,2.01,1.63,0.38,L,xW,False,32.59,33.06,32,1.134,1.334
 2026-09-19,CF Montréal,Away,2,0,0.81,0.59,0.22,W,xD,False,33.4,33.65,34,1.2440000000000002,1.294
 2026-09-27,Inter Miami CF,Home,2,1,1.8,0.4,1.4,W,xW,True,35.2,34.05,36,1.484,1.09
-2026-10-10,Orlando City SC,Away,2,3,3.42,2.0,1.42,L,xW,False,38.62,36.05,38,1.8039999999999998,1.354
+2026-10-10,Orlando City SC,Away,2,3,3.83,2.22,1.61,L,xW,False,39.03,36.27,38,1.886,1.3980000000000001
