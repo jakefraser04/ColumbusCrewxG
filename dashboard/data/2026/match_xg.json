@@ -502,5 +502,23 @@
     "cumulative_goals": 38,
     "rolling_xg_for": 1.886,
     "rolling_xg_ag": 1.3980000000000001
+  },
+  {
+    "date": "2026-10-14",
+    "opponent": "Charlotte FC",
+    "venue": "Home",
+    "goals_for": 3,
+    "goals_ag": 1,
+    "xg_for": 4.27,
+    "xg_ag": 0.81,
+    "xg_diff": 3.46,
+    "result": "W",
+    "xg_result": "xW",
+    "deserved": true,
+    "cumulative_xg": 43.3,
+    "cumulative_xga": 37.08,
+    "cumulative_goals": 41,
+    "rolling_xg_for": 2.5439999999999996,
+    "rolling_xg_ag": 1.1300000000000001
   }
 ]
