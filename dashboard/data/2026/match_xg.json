@@ -520,5 +520,23 @@
     "cumulative_goals": 41,
     "rolling_xg_for": 2.5439999999999996,
     "rolling_xg_ag": 1.1300000000000001
+  },
+  {
+    "date": "2026-10-18",
+    "opponent": "FC Cincinnati",
+    "venue": "Away",
+    "goals_for": 2,
+    "goals_ag": 0,
+    "xg_for": 0.23,
+    "xg_ag": 2.74,
+    "xg_diff": -2.51,
+    "result": "W",
+    "xg_result": "xL",
+    "deserved": false,
+    "cumulative_xg": 43.53,
+    "cumulative_xga": 39.82,
+    "cumulative_goals": 43,
+    "rolling_xg_for": 2.188,
+    "rolling_xg_ag": 1.3519999999999999
   }
 ]
