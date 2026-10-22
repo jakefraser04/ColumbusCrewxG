@@ -28,4 +28,4 @@ date,opponent,venue,goals_for,goals_ag,xg_for,xg_ag,xg_diff,result,xg_result,des
 2026-09-27,Inter Miami CF,Home,2,1,1.8,0.4,1.4,W,xW,True,35.2,34.05,36,1.484,1.09
 2026-10-10,Orlando City SC,Away,2,3,3.83,2.22,1.61,L,xW,False,39.03,36.27,38,1.886,1.3980000000000001
 2026-10-14,Charlotte FC,Home,3,1,4.27,0.81,3.46,W,xW,True,43.3,37.08,41,2.5439999999999996,1.1300000000000001
-2026-10-18,FC Cincinnati,Away,2,0,0.23,2.74,-2.51,W,xL,False,43.53,39.82,43,2.188,1.3519999999999999
+2026-10-18,FC Cincinnati,Away,2,0,0.23,2.41,-2.18,W,xL,False,43.53,39.49,43,2.188,1.286

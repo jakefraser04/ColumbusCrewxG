@@ -528,15 +528,15 @@
     "goals_for": 2,
     "goals_ag": 0,
     "xg_for": 0.23,
-    "xg_ag": 2.74,
-    "xg_diff": -2.51,
+    "xg_ag": 2.41,
+    "xg_diff": -2.18,
     "result": "W",
     "xg_result": "xL",
     "deserved": false,
     "cumulative_xg": 43.53,
-    "cumulative_xga": 39.82,
+    "cumulative_xga": 39.49,
     "cumulative_goals": 43,
     "rolling_xg_for": 2.188,
-    "rolling_xg_ag": 1.3519999999999999
+    "rolling_xg_ag": 1.286
   }
 ]
