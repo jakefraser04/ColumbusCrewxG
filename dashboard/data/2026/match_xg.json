@@ -538,5 +538,23 @@
     "cumulative_goals": 43,
     "rolling_xg_for": 2.188,
     "rolling_xg_ag": 1.286
+  },
+  {
+    "date": "2026-10-24",
+    "opponent": "Toronto FC",
+    "venue": "Home",
+    "goals_for": 4,
+    "goals_ag": 2,
+    "xg_for": 1.81,
+    "xg_ag": 2.55,
+    "xg_diff": -0.74,
+    "result": "W",
+    "xg_result": "xL",
+    "deserved": false,
+    "cumulative_xg": 45.34,
+    "cumulative_xga": 42.04,
+    "cumulative_goals": 47,
+    "rolling_xg_for": 2.3880000000000003,
+    "rolling_xg_ag": 1.6780000000000002
   }
 ]
