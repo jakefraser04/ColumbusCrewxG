@@ -556,5 +556,23 @@
     "cumulative_goals": 47,
     "rolling_xg_for": 2.41,
     "rolling_xg_ag": 1.6620000000000001
+  },
+  {
+    "date": "2026-10-29",
+    "opponent": "FC Dallas",
+    "venue": "Away",
+    "goals_for": 2,
+    "goals_ag": 0,
+    "xg_for": 1.56,
+    "xg_ag": 1.04,
+    "xg_diff": 0.51,
+    "result": "W",
+    "xg_result": "xW",
+    "deserved": true,
+    "cumulative_xg": 47.01,
+    "cumulative_xga": 43.0,
+    "cumulative_goals": 49,
+    "rolling_xg_for": 2.3619999999999997,
+    "rolling_xg_ag": 1.7899999999999998
   }
 ]
